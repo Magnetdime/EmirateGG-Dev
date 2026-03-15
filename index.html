@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emirate GG | The Elite Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#fbbf24',
+                        dark: '#0a0b0d',
+                        surface: '#16181d',
+                    },
+                    fontFamily: {
+                        gaming: ['Orbitron', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0a0b0d; color: #e5e7eb; }
+        .gold-glow { box-shadow: 0 0 30px rgba(251, 191, 36, 0.15); }
+        .banner-mask { mask-image: linear-gradient(to bottom, black 85%, transparent 100%); }
+        .animate-marquee { display: flex; animation: marquee 25s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full z-50 bg-dark/80 backdrop-blur-xl border-b border-gray-800 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-gold rounded-lg flex items-center justify-center font-black text-black text-xl shadow-lg shadow-gold/20">E</div>
+            <span class="font-gaming text-xl md:text-2xl font-bold tracking-tighter text-white">EMIRATE<span class="text-gold">GG</span></span>
+        </div>
+        
+        <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-400">
+            <a href="#" class="hover:text-gold transition">Accounts</a>
+            <a href="#" class="hover:text-gold transition">Gold</a>
+            <a href="#" class="hover:text-gold transition">Boosting</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <button class="bg-gold text-black px-6 py-2 rounded-full font-bold text-sm hover:scale-105 transition shadow-lg shadow-gold/20">Sell Now</button>
+        </div>
+    </nav>
+
+    <header class="pt-28 px-4 max-w-7xl mx-auto">
+        <div class="relative w-full rounded-[2rem] overflow-hidden gold-glow border border-gold/20 bg-surface">
+            <img src="banner.png" alt="Welcome to Emirate GG" class="w-full h-auto object-cover banner-mask min-h-[200px]">
+            
+            <div class="absolute bottom-6 left-6 md:left-12">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-green-500 w-2 h-2 rounded-full animate-pulse"></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-green-500">System Secure</span>
+                </div>
+                <h1 class="font-gaming text-2xl md:text-5xl font-black text-white">THE EMIRATE <br><span class="text-gold">ADVANTAGE</span></h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 py-12">
+        <div class="flex justify-between items-end mb-8">
+            <div>
+                <h2 class="font-gaming text-2xl font-bold text-white">BROWSE GAMES</h2>
+                <p class="text-gray-500 text-sm">Secure trading for the Middle East's top titles.</p>
+            </div>
+            <a href="#" class="text-gold text-sm font-bold border-b border-gold/0 hover:border-gold transition">View All</a>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+            <div class="bg-surface border border-gray-800 p-4 rounded-3xl hover:border-gold transition group cursor-pointer">
+                <div class="aspect-square bg-dark rounded-2xl mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 flex items-center justify-center font-gaming text-gray-700 group-hover:text-gold transition">VALORANT</div>
+                </div>
+                <h3 class="font-bold text-white text-sm">Valorant</h3>
+                <div class="flex justify-between items-center mt-2">
+                    <span class="text-gray-500 text-[10px] font-bold uppercase tracking-tight">Accounts</span>
+                    <span class="text-gold font-bold text-xs">$5.00+</span>
+                </div>
+            </div>
+
+            <div class="bg-surface border border-gray-800 p-4 rounded-3xl hover:border-gold transition group cursor-pointer">
+                <div class="aspect-square bg-dark rounded-2xl mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 flex items-center justify-center font-gaming text-gray-700 group-hover:text-gold transition">ROBLOX</div>
+                </div>
+                <h3 class="font-bold text-white text-sm">Roblox</h3>
+                <div class="flex justify-between items-center mt-2">
+                    <span class="text-gray-500 text-[10px] font-bold uppercase tracking-tight">Items / Robux</span>
+                    <span class="text-gold font-bold text-xs">$1.20+</span>
+                </div>
+            </div>
+
+            <div class="bg-surface border border-gray-800 p-4 rounded-3xl hover:border-gold transition group cursor-pointer">
+                <div class="aspect-square bg-dark rounded-2xl mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 flex items-center justify-center font-gaming text-gray-700 group-hover:text-gold transition">OSRS</div>
+                </div>
+                <h3 class="font-bold text-white text-sm">Old School RS</h3>
+                <div class="flex justify-between items-center mt-2">
+                    <span class="text-gray-500 text-[10px] font-bold uppercase tracking-tight">Gold</span>
+                    <span class="text-gold font-bold text-xs">$0.40/M</span>
+                </div>
+            </div>
+
+            <div class="bg-surface border border-gray-800 p-4 rounded-3xl hover:border-gold transition group cursor-pointer">
+                <div class="aspect-square bg-dark rounded-2xl mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 flex items-center justify-center font-gaming text-gray-700 group-hover:text-gold transition">FORTNITE</div>
+                </div>
+                <h3 class="font-bold text-white text-sm">Fortnite</h3>
+                <div class="flex justify-between items-center mt-2">
+                    <span class="text-gray-500 text-[10px] font-bold uppercase tracking-tight">Skins</span>
+                    <span class="text-gold font-bold text-xs">$12.00+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-gold py-4 overflow-hidden">
+        <div class="animate-marquee whitespace-nowrap">
+            <span class="font-gaming font-black text-black text-xl mx-8">TRADESHIELD™ ESCROW ACTIVE</span>
+            <span class="font-gaming font-black text-black text-xl mx-8">24/7 ARABIC & ENGLISH SUPPORT</span>
+            <span class="font-gaming font-black text-black text-xl mx-8">VERIFIED SELLERS ONLY</span>
+            <span class="font-gaming font-black text-black text-xl mx-8">INSTANT DELIVERY</span>
+            <span class="font-gaming font-black text-black text-xl mx-8">TRADESHIELD™ ESCROW ACTIVE</span>
+            <span class="font-gaming font-black text-black text-xl mx-8">24/7 ARABIC & ENGLISH SUPPORT</span>
+            <span class="font-gaming font-black text-black text-xl mx-8">VERIFIED SELLERS ONLY</span>
+            <span class="font-gaming font-black text-black text-xl mx-8">INSTANT DELIVERY</span>
+        </div>
+    </div>
+
+</body>
+</html>
